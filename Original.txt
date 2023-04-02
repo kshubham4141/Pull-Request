@@ -1,2 +1,55 @@
 I am Shubham.
 I am currently Pursuing Engineering from Chandigarh University.
+
+
+selenium
+
+import org.openqa.selenium.By;  
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Agile 
+{
+ public static void main(String[] agrs)
+ {
+	 System.setProperty("webdriver.chrome.driver","C:\\chromedriver_win32\\chromedriver.exe");
+	 ChromeDriver driver =new ChromeDriver();
+	 driver.get("https://www.google.com");
+	 driver.findElement(By.name("q")).sendKeys("Agile Methodologies");
+
+ }
+}
+
+junit
+
+package agileee;
+
+public class agile {
+	public int add(int a,int b)
+	{
+		return(a+b);
+	}
+	
+
+}
+
+package agileee;
+
+import junit.framework.TestCase;
+
+public class agileTest2 extends TestCase {
+	public void testAdd()
+	{
+		agileTest2 t = new agileTest2();
+		assertEquals(2,t.add(1,1));
+		
+	}
+
+	private Object add(int i, int j) {
+		// TODO Auto-generated method stub
+		
+		return (i+j);
+	}
+
+}
+
+
