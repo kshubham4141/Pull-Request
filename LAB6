@@ -1,0 +1,38 @@
+import java.util.*; 
+   
+public class Main { 
+    public static void main(String[] args)  { 
+        List<String> strList = new ArrayList<String>();           // Creating a list 
+        strList.add("I");  
+        strList.add("am");  
+        strList.add("Shubham");
+        
+        //print the list
+        System.out.println("List after adding two elements:" + strList);  
+        
+        List<String> llist = new ArrayList<String>();       // Create another list
+        llist.add("UID"); 
+        llist.add("21CDO1062"); 
+        llist.add("211062"); 
+        llist.add("21106"); 
+        
+         // addAll method - add llist to strList 
+        strList.addAll(llist); 
+        System.out.println("List after addAll:"+ strList); 
+       
+
+        
+        System.out.println("Index of 21CDO1062:"+ llist.indexOf(211062));
+        
+        if(strList.containsAll(llist)==true)  // display          
+           
+        System.out.println("List contains strings 'UID' and '21CDO1062'");
+             
+              
+            
+        strList.removeAll(llist); // removing elements from list
+        System.out.println("strlist after removing elements {UID,21CDO1062,211062,21106}}:" + strList);
+        
+            
+      } 
+}
